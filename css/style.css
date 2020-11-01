@@ -144,12 +144,33 @@
 .lang .card{
     text-align: center;
     margin: 18px 10px 40px;
+    animation: one .5s linear;
+    -webkit-animation: one .5s linear;
     transition: transform .2s ease-in;
     -webkit-transition: transform .2s ease-in;
     -moz-transition: transform .2s ease-in;
     -ms-transition: transform .2s ease-in;
     -o-transition: transform .2s ease-in;
 }
+.lang .card:nth-child(2){
+    animation-delay: .5s;
+}
+.lang .card:nth-child(3){
+    animation-delay: 1s;
+}
+.lang .card:nth-child(4){
+    animation-delay: 1.5s;
+}
+.lang .card:nth-child(5){
+    animation-delay: 2s;
+}
+.lang .card:nth-child(6){
+    animation-delay: 2.5s;
+}
+.lang .card:nth-child(7){
+    animation-delay: 3s;
+}
+
 .lang .card:hover{
     transform: translatey(-15px);
     -webkit-transform: translatey(-15px);
@@ -162,6 +183,12 @@
     font-size: 20px;
     margin-bottom: 5px;
 }
+
+/* .lang .flex .card.card1{
+    animation: card 1s ease 1;
+    -webkit-animation: card 1s ease 1;
+} */
+
 
 /* footer stats  */
 
@@ -281,5 +308,21 @@
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+}
+}
+@keyframes one{
+    0%{
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+}
+100%{
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
 }
 }
